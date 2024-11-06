@@ -40,7 +40,7 @@ namespace mobilna.Views
 
 
             int rollResult = 0;
-            for (int dots = 1; dots < 6; dots++)
+            for (int dots = 1; dots <= 6; dots++)
             {
                 int count = 0;
                 for (int diceIndex = 0; diceIndex < 5; diceIndex++)
@@ -69,9 +69,9 @@ namespace mobilna.Views
             Dice3.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
             Dice4.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
 
-            rollResult_label.Text = "Wynik tego losowania: ";
+            rollResult_label.Text = "Wynik tego losowania: 0";
             gameResult = 0;
-            gameResult_label.Text = "Wynik gry: ";
+            gameResult_label.Text = "Wynik gry: 0";
         }
     }
 }
