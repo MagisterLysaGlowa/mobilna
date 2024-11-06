@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="mobilna.MainPage">
-
-    <StackLayout BackgroundColor="Beige">
+             x:Class="mobilna.Views.DicesPage"
+             Title="Kości">
+    <StackLayout BackgroundColor="Beige" Spacing="25" Orientation="Vertical">
         <Label Text="Gra w kości. Autor: 00000000000" BackgroundColor="Brown" FontSize="Title" TextColor="White"/>
         <Button Text="RZUT KOŚĆMI" BackgroundColor="Chocolate" TextColor="White" HorizontalOptions="Center"/>
-        <FlexLayout>
-            <Image x:Name="Dice0" FlexLayout.Basis="20%"/>
-            <Image x:Name="Dice1" FlexLayout.Basis="20%"/>
-            <Image x:Name="Dice2" FlexLayout.Basis="20%"/>
-            <Image x:Name="Dice3" FlexLayout.Basis="20%"/>
-            <Image x:Name="Dice4" FlexLayout.Basis="20%"/>
+        <FlexLayout Padding="5,2,5,2" BackgroundColor="white">
+            <Image x:Name="Dice0" FlexLayout.Basis="20%" Margin="5,0,5,0"/>
+            <Image x:Name="Dice1" FlexLayout.Basis="20%" Margin="5,0,5,0"/>
+            <Image x:Name="Dice2" FlexLayout.Basis="20%" Margin="5,0,5,0"/>
+            <Image x:Name="Dice3" FlexLayout.Basis="20%" Margin="5,0,5,0"/>
+            <Image x:Name="Dice4" FlexLayout.Basis="20%" Margin="5,0,5,0"/>
         </FlexLayout>
         <Button Text="RESETUJ WYNIK" BackgroundColor="Chocolate" TextColor="White" HorizontalOptions="Center"/>
         <Label Text="Wynik tego losowania: " x:Name="rollResult_label" HorizontalTextAlignment="Center"/>
         <Label Text="Wynik gry: " x:Name="gameResult_label" HorizontalTextAlignment="Center"/>
     </StackLayout>
-
 </ContentPage>

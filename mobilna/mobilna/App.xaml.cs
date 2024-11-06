@@ -10,7 +10,7 @@ namespace mobilna
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Tabbed_Page();
         }
 
         protected override void OnStart()
