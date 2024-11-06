@@ -13,6 +13,11 @@ namespace mobilna
         public MainPage()
         {
             InitializeComponent();
+            Dice0.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
+            Dice1.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
+            Dice2.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
+            Dice3.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
+            Dice4.Source = ImageSource.FromResource("mobilna.Images.question.jpg");
         }
     }
 }
